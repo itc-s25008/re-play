@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  min-height: 260px;
+  padding: 28px;
+  border: 1px solid #dedfd8;
+  border-radius: 16px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.card > p:not(.category) {
+  margin-top: 12px;
+  color: #686d69;
+  line-height: 1.7;
+}
+
+.card time {
+  margin-top: auto;
+  padding-top: 24px;
+  color: #90948f;
+  font-size: 12px;
+}
+
+.category {
+  color: #28715d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

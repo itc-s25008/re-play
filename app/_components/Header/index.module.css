@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  max-width: 1120px;
+  height: 76px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .header {
+    height: 64px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a:last-child {
+    display: none;
+  }
+}

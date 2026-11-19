@@ -1,0 +1,32 @@
+.tags {
+  margin-top: 72px;
+  padding: 40px;
+  border-radius: 16px;
+  background: #e8ede8;
+}
+
+.tags h2 {
+  font-size: 28px;
+  letter-spacing: -0.03em;
+}
+
+.tagList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tagList span {
+  padding: 9px 14px;
+  border: 1px solid #cbd4cd;
+  border-radius: 999px;
+  background: #ffffff;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .tags {
+    padding: 28px 24px;
+  }
+}
